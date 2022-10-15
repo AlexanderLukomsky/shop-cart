@@ -57,7 +57,7 @@ export const api = {
                   }
                ]
             )
-         }, 1000)
+         }, 600)
       })
       return promise
    },
@@ -65,7 +65,7 @@ export const api = {
       const promise = new Promise(res => {
          setTimeout(() => {
             res(true)
-         }, 1000)
+         }, 600)
       })
       return promise
    },
@@ -73,7 +73,7 @@ export const api = {
       const promise = new Promise<string>(res => {
          setTimeout(() => {
             res(JSON.stringify(data))
-         }, 1000)
+         }, 600)
       })
       return promise
    }

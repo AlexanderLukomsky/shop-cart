@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { api } from '../common/api/api';
 import { ItemInCartType } from "../common/types/commonTypes";
-import { getInLocalStorage } from '../common/utils/utils';
+import { getFromLocalStorage } from '../common/utils/utils';
 import { setCartItems } from '../features/cart/cartReducer';
 
 const slice = createSlice({
@@ -19,7 +19,7 @@ const slice = createSlice({
 export const initializeApp = createAsyncThunk(
    'app/initialized',
    async (_, { rejectWithValue, dispatch }) => {
-      const data = getInLocalStorage<{ items: ItemInCartType[] }>('cart')
+      const data = getFromLocalStorage<{ items: ItemInCartType[] }>('cart')
       if (data) {
          dispatch(setCartItems(data.items))
       }

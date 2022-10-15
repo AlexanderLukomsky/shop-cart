@@ -1,4 +1,4 @@
-export const getInLocalStorage = <T>(key: string) => {
+export const getFromLocalStorage = <T>(key: string) => {
    const dataAsString = localStorage.getItem(key)
    if (dataAsString) {
       const data: T = JSON.parse(dataAsString)
