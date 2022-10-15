@@ -1,0 +1,8 @@
+@import "../common/styles/reset.scss";
+@import "../common/styles/container.scss";
+.spinner {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}

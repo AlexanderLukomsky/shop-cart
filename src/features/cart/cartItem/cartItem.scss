@@ -1,0 +1,22 @@
+.cart-item {
+   border: 1px solid #2cb67d;
+   box-shadow: 1px 2px 3px #2cb67d;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   border-radius: 5px;
+   padding: 5px;
+   max-width: 550px;
+   .product-card {
+      flex-direction: row;
+      padding-right: 7px;
+      &__info {
+         align-items: flex-start;
+         margin-left: 5px;
+      }
+      &__title {
+         margin-top: 0;
+      }
+   }
+}

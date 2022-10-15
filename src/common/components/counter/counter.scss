@@ -1,0 +1,27 @@
+.counter {
+   display: flex;
+   align-items: center;
+   &__button {
+      width: 35px;
+      height: 35px;
+      font-weight: 700;
+      font-size: 20px;
+      background-color: #0f0e17;
+      border-radius: 2px;
+      padding-bottom: 2px;
+   }
+   &__quantity {
+      display: inline-block;
+      min-width: 30px;
+      height: 30px;
+      text-align: center;
+      font-size: 22px;
+      padding: 3px 3px 0;
+   }
+   &__button:first-child {
+      color: #e53170;
+   }
+   &__button:last-child {
+      color: #2cb67d;
+   }
+}

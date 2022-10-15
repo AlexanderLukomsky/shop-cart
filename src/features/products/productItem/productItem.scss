@@ -1,0 +1,28 @@
+.product-item {
+   border: 1px solid #a7a9be;
+   text-align: center;
+   padding: 10px;
+   max-width: 280px;
+   &__button {
+      position: relative;
+      background: transparent;
+      text-transform: uppercase;
+      background-color: #ff8906;
+      height: 40px;
+      max-width: 150px;
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fffffe;
+      border-radius: 4px;
+      &:hover {
+         background-color: #f25f4c;
+      }
+      &:active {
+         top: 1px;
+      }
+      &.nav-button {
+         background-color: #2cb67d;
+      }
+   }
+}

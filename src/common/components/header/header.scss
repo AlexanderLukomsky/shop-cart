@@ -1,0 +1,21 @@
+.header {
+   background-color: #94a1b2;
+   &__row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 60px;
+      &.cart {
+         justify-content: flex-start;
+      }
+      .total-cost {
+         margin-right: 10px;
+      }
+   }
+   &__link {
+      color: #7f5af0;
+      background-color: #fffffe;
+      padding: 10px;
+      border-radius: 3px;
+   }
+}

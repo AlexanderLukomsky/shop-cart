@@ -1,0 +1,37 @@
+.order-form {
+   margin: 0 auto;
+   &__button {
+      display: block;
+      margin: 0 auto;
+      min-width: 260px;
+      padding: 10px;
+      font-size: 22px;
+      font-weight: 500;
+      background-color: #ff8906;
+      color: #fffffe;
+      border-radius: 3px;
+   }
+   .item {
+      margin-bottom: 10px;
+      &__value {
+         padding: 3px;
+         border-radius: 3px;
+         border: 1px solid #ff8906;
+         font-size: 18px;
+         max-width: 360px;
+         width: 100%;
+         height: 40px;
+      }
+   }
+   .error {
+      .item {
+         &__value {
+            border-color: #fa5246;
+            &::placeholder {
+               color: #fa5246;
+               text-transform: uppercase;
+            }
+         }
+      }
+   }
+}
